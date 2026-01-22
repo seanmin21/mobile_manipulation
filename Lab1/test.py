@@ -5,3 +5,4 @@ robot = stretch_body.robot.Robot()
 robot.startup()
 
 robot.arm.move_to(0.5)
+robot.push.command()
