@@ -11,15 +11,15 @@ robot.lift.move_to(1.1)
 robot.push_command()
 robot.wait_command()
 
-robot.end_of_arm.move_to('wrist_yaw', np.radians(30))
+robot.end_of_arm.move_to('wrist_yaw', np.radians(50))
 robot.push_command()
 robot.wait_command()
 
-robot.end_of_arm.move_to('wrist_pitch', np.radians(30))
+robot.end_of_arm.move_to('wrist_pitch', np.radians(50))
 robot.push_command()
 robot.wait_command()
 
-robot.end_of_arm.move_to('wrist_roll', np.radians(30))
+robot.end_of_arm.move_to('wrist_roll', np.radians(50))
 robot.push_command()
 robot.wait_command()
 
@@ -27,12 +27,13 @@ robot.end_of_arm.move_to('stretch_gripper', 100)
 robot.push_command()
 robot.wait_command()
 
-robot.end_of_arm.move_to('stretch_gripper', -10)
+robot.end_of_arm.move_to('stretch_gripper', 0)
 robot.push_command()
 robot.wait_command()
+time.sleep(0.1)
 
-robot.head.move_by('head_pan', np.radians(50)) # Move head pan
-robot.head.move_by('head_tilt', np.radians(50)) # Move head tilt
+robot.head.move_by('head_pan', np.radians(60)) # Move head pan
+robot.head.move_by('head_tilt', np.radians(60)) # Move head tilt
 robot.push_command()
 robot.wait_command()
 
