@@ -39,12 +39,12 @@ robot.wait_command()
 
 robot.stow()
 
-robot.base.translate_by(0.3) # Move robot base 0.3 meters forward
+robot.base.translate_by(0.5) # Move robot base 0.3 meters forward
 robot.push_command()
 robot.wait_command()
 robot.base.rotate_by(np.radians(180)) # Rotate base by 180 degrees
 robot.push_command()
 robot.wait_command()
-robot.base.translate_by(0.3)
+robot.base.translate_by(0.5)
 robot.push_command()
 robot.wait_command()
